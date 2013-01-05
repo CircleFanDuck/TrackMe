@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	</head>
+	<body>
+	    <div class='header'>
+		    <ul class='tab'>
+			    <li> &hearts; New </li>
+			    <li class=TODO> &#9825; My Tracking</li>
+			    <li class=TODO> &#9825; Sending</li>
+			</ul>
+		</div>
+	    <div class='body'>
+		    <ul class='tab'>
+			    <li>
+				    <div class='form'>
+					    <div class='list'>
+						    <label class='title'>To:</label>
+							<input class='input'/>
+							<span class='inputHelper'>&#9822;</span>
+						</div>
+					    <div class='list'>
+						    <label class='title'>Description:</label>
+							<textarea class='input'></textarea>
+						</div>
+					    <div class='list subHandler'>- More -</div>
+					    <div class='list'>
+						    <label class='title'>Base on:</label>
+							<input class='input'/>
+							<span class='inputHelper'>&#9822;</span>
+						</div>
+					    <div class='list'>
+						    <label class='title'>Status:</label>
+							<select class='iconInput'>
+							    <option>a</option>
+							    <option>b</option>
+							    <option>c</option>
+							</select>
+							<span class='currentDis'>a</span>
+						</div>
+					    <div class='list'>
+						    <label class='title'>Change reminder:</label>
+							<input type='checkbox'/>
+						</div>
+					    <div class='list'>
+						    <label class='title'>Time derution:</label>
+							<input class='input'/>
+						</div>
+					    <div class='list'>
+						    <label class='title'></label>
+							<input class='input'/>
+						</div>
+					    <div class='list'>
+						    <label class='title'>Attach:</label>
+							<input class='input'/>
+							<span class='inputHelper'>&#9822;</span>
+						</div>
+					    <div class='list'>
+						    <label class='title'>Tag:</label>
+							<input class='input'/>
+							<span class='inputHelper'>&#9822;</span>
+						</div>
+						<div class='list subHandler'></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<style>
+	*{
+	    font-family:Arial;
+	    list-style:none;
+		font-size:12px;
+		padding:0px;
+		margin:0px;
+	}
+	body{
+		background:#8B475D;
+		color:white;
+	}
+	.tab li{
+		padding: 0.5em 1em;
+		font-weight:bold;
+	}
+	.header .tab li{
+		font-style:italic;
+		font-size:120%;
+	}
+	.header,.body{
+	    float:left;
+	}
+	.body{
+	    height:100%;
+		background:#EE799F;
+	}
+	.form .list{
+		margin:0.2em;
+		position:relative;
+		float:left;
+		clear:left;
+	}
+	.title{
+	    width:10em;
+		float:left;
+	}
+	.input{
+	    width:15em;
+		float:right;
+	}
+	.iconInput{
+	    width:3em;
+	}
+	.inputHelper{
+	    float:right;
+		position:absolute;
+		right:0px;
+		top:0px;
+		z-index:1000;
+		padding:0 0.2em;
+		color:#8B475D;
+	}
+	.subHandler{
+	    width:100%;
+		border-top:1.5px solid #FFB5C5;
+		color:#FFB5C5;
+		text-align:center;
+	}
+	.currentDis{
+	    float:right;
+		font-size:0.8em;
+		padding:0 0.5em;
+	}
+	</style>
+	<!--Only for debug-->
+	<style>
+	.TODO{
+	    text-decoration:line-through;
+	}
+	</style>
+</html>
